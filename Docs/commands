@@ -1,0 +1,15 @@
+Operator system specifications:
+
+CPU : i5-6700k 
+Memory : 24 GB DDR4
+
+Executed commands:
+First test:
+
+ab -n 5000 -c 1000 http://127.0.0.1:8080/
+ab -n 5000 -c 1000 http://127.0.0.1:8000/
+
+Second test:
+
+ab -n 50000 -c 1000 http://127.0.0.1:8080/
+ab -n 50000 -c 1000 http://127.0.0.1:8000/

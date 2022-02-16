@@ -1,0 +1,55 @@
+➜  ~ ab -n 5000 -c 1000 http://127.0.0.1:8080/
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 500 requests
+Completed 1000 requests
+Completed 1500 requests
+Completed 2000 requests
+Completed 2500 requests
+Completed 3000 requests
+Completed 3500 requests
+Completed 4000 requests
+Completed 4500 requests
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        Apache/2.4.38
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /
+Document Length:        17 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   1.753 seconds
+Complete requests:      5000
+Failed requests:        0
+Total transferred:      1010000 bytes
+HTML transferred:       85000 bytes
+Requests per second:    2852.47 [#/sec] (mean)
+Time per request:       350.574 [ms] (mean)
+Time per request:       0.351 [ms] (mean, across all concurrent requests)
+Transfer rate:          562.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    5  10.5      0      51
+Processing:    25  179 286.6     67    1193
+Waiting:        3  179 286.5     67    1192
+Total:         46  184 289.8     67    1202
+
+Percentage of the requests served within a certain time (ms)
+  50%     67
+  66%     73
+  75%     92
+  80%    224
+  90%    411
+  95%   1012
+  98%   1155
+  99%   1176
+ 100%   1202 (longest request)
+

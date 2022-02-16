@@ -1,0 +1,55 @@
+➜  ~ ab -n 50000 -c 1000 http://127.0.0.1:8000/
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 5000 requests
+Completed 10000 requests
+Completed 15000 requests
+Completed 20000 requests
+Completed 25000 requests
+Completed 30000 requests
+Completed 35000 requests
+Completed 40000 requests
+Completed 45000 requests
+Completed 50000 requests
+Finished 50000 requests
+
+
+Server Software:        uvicorn
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /
+Document Length:        17 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   6.569 seconds
+Complete requests:      50000
+Failed requests:        0
+Total transferred:      7100000 bytes
+HTML transferred:       850000 bytes
+Requests per second:    7611.88 [#/sec] (mean)
+Time per request:       131.374 [ms] (mean)
+Time per request:       0.131 [ms] (mean, across all concurrent requests)
+Transfer rate:          1055.55 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   3.5      1      47
+Processing:     1  129  60.3    124     330
+Waiting:        1  110  54.8    102     322
+Total:          1  130  60.6    125     331
+
+Percentage of the requests served within a certain time (ms)
+  50%    125
+  66%    152
+  75%    169
+  80%    181
+  90%    214
+  95%    243
+  98%    270
+  99%    294
+ 100%    331 (longest request)
+
